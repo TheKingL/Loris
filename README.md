@@ -6,8 +6,6 @@
 
 - ⌛ I’m currently working on many projets.
 
-- 📫 How to reach me **josukejoestar84@gmail.com**.
-
 ***
 
 <h3 align="left">Languages and Tools</h3>
