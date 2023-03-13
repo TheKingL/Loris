@@ -6,33 +6,24 @@
     <title>Loris</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script defer type="text/javascript" src="./assets/js/scroll.js"></script>
+    <script defer type="text/javascript" src="./assets/js/mousemove.js"></script>
     <link rel="icon" type="image/x-icon" href="assets/img/icon.png">
 </head>
 <body>
     <section>
         <div class="parallax">
             <h2 class="object" data-value="3">Loris</h2>
-            <img src="assets/img/1.png" class="object" data-value="-2" alt="">
-            <img src="assets/img/2.png" class="object" data-value="6" alt="">
-            <img src="assets/img/3.png" class="object" data-value="4" alt="">
-            <img src="assets/img/4.png" class="object" data-value="-6" alt="">
-            <img src="assets/img/5.png" class="object" data-value="8" alt="">
-            <img src="assets/img/6.png" class="object" data-value="-4" alt="">
-            <img src="assets/img/7.png" class="object" data-value="5" alt="">
-            <img src="assets/img/8.png" class="object" data-value="-9" alt="">
-            <img src="assets/img/9.png" class="object" data-value="-5" alt="">
+            <img src="assets/img/parallax/1.png" class="object" data-value="-2" alt="">
+            <img src="assets/img/parallax/2.png" class="object" data-value="6" alt="">
+            <img src="assets/img/parallax/3.png" class="object" data-value="4" alt="">
+            <img src="assets/img/parallax/4.png" class="object" data-value="-6" alt="">
+            <img src="assets/img/parallax/5.png" class="object" data-value="8" alt="">
+            <img src="assets/img/parallax/6.png" class="object" data-value="-4" alt="">
+            <img src="assets/img/parallax/7.png" class="object" data-value="5" alt="">
+            <img src="assets/img/parallax/8.png" class="object" data-value="-9" alt="">
+            <img src="assets/img/parallax/9.png" class="object" data-value="-5" alt="">
         </div>
-        <script type="text/javascript">
-            document.addEventListener('mousemove', parallax);
-            function parallax(e) {
-                this.querySelectorAll('.object').forEach(layer => {
-                    const speed = layer.getAttribute('data-value');
-                    const x = (window.innerWidth - e.pageX * speed) / 100;
-                    const y = (window.innerHeight - e.pageY * speed) / 100;
-                    layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
-                });
-            }
-        </script>
     </section>
 
     <section>
@@ -57,22 +48,22 @@
                 <div class="text-card">
                     <h3>Votee</h3>
                     <p>Une application web de décision collective (ou démocratie participative).</p>
-                    <button class="btn"><a href="#"><i class="fa-solid fa-arrow-right"></i></a></button>
+                    <button class="btn"><a href="assets/html/votee.html"><i class="fa-solid fa-arrow-right"></i></a></button>
                 </div>
                 <div class="text-card">
                     <h3>Bingo</h3>
                     <p>Un projet personnel en Java sur le jeu du Bingo mais dans Minecraft !</p>
-                    <button class="btn"><a href="#"><i class="fa-solid fa-arrow-right"></i></a></button>
+                    <button class="btn"><a href="assets/html/bingo.html"><i class="fa-solid fa-arrow-right"></i></a></button>
                 </div>
                 <div class="text-card">
                     <h3>CGJ 2023</h3>
                     <p>La Code Game Jam 2023 et notre jeu phare, TimeBomb !</p>
-                    <button class="btn"><a href="#"><i class="fa-solid fa-arrow-right"></i></a></button>
+                    <button class="btn"><a href="assets/html/timebomb.html"><i class="fa-solid fa-arrow-right"></i></a></button>
                 </div>
                 <div class="text-card">
                     <h3>NDI 2023</h3>
                     <p>La Nuit De L'Info 2023 autour de Sida Info Service Association.</p>
-                    <button class="btn"><a href="#"><i class="fa-solid fa-arrow-right"></i></a></button>
+                    <button class="btn"><a href="assets/html/ndi.html"><i class="fa-solid fa-arrow-right"></i></a></button>
                 </div>
             </div>
         </div>
@@ -93,34 +84,13 @@
                         Github</a></li>
                     <li style="--i:5;--clr:#0a66c2;"><a href="https://www.linkedin.com/in/loris-c-8a9661230/"><span><i class="fa-brands fa-linkedin"></i></span>
                         Linkedin</a></li>
-                    <li style="--i:4;--clr:#FF0000;"><a href="assets/CV.pdf" download="logo"><span><i class="fa-solid fa-download"></i></span>
+                    <li style="--i:4;--clr:#e5d812;"><a href="mailto:loris.cazaux@gmail.com"><span><i class="fa-regular fa-envelope"></i></span>
+                        Mail</a></li>
+                    <li style="--i:3;--clr:#FF0000;"><a href="assets/CV.pdf" download="cv"><span><i class="fa-solid fa-download"></i></span>
                         CV</a></li>
                 </ul>
             </div>
         </div>
     </section>
-
-    <script type="text/javascript">
-        window.addEventListener('scroll', reveal);
-
-        function reveal() {
-            var reveals = document.querySelectorAll('.reveal');
-
-            for (var i = 0; i < reveals.length; i++) {
-
-                var windowheight = window.innerHeight;
-                var revealtop = reveals[i].getBoundingClientRect().top;
-                var revealpoint = 150;
-
-                if (revealtop < windowheight - revealpoint) {
-                    reveals[i].classList.add('active');
-                }
-                else {
-                    reveals[i].classList.remove('active');
-                }
-            }
-        }
-    </script>
-
 </body>
 </html>
