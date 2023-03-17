@@ -17,24 +17,18 @@ body {
         letter-spacing: 5px;
     }
 
-    section h1 {
-        font-size: 40px;
+    section h2 {
+        font-size: 10px;
     }
 
     section .cards{
         flex-direction: column;
     }
-}
 
-.return {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 5px 10px;
-    margin: 10px;
-    background-color: #fff;
-    text-decoration: none;
-    border-radius: 50px;
+    .list {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /**
@@ -101,6 +95,10 @@ body {
     color: #fff;
 }
 
+.titlebar p {
+    translate: -30px;
+}
+
 .buttons {
     padding-left: 8px;
     padding-top: 3px;
@@ -145,6 +143,10 @@ body {
 .content {
     padding: 10px;
     color: #fff;
+}
+
+.content p {
+    padding-top: 10px;
 }
 
 /**
@@ -209,12 +211,22 @@ section h2{
 
 section .cards{
     display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 section .cards .text-card{
     background: #2696E9;
-    margin: 20px;
     padding: 20px;
+    width: 100%;
+}
+
+section .cards .text-card img {
+    width: 100%;
+}
+
+.direction-column{
+    flex-direction: column;
 }
 
 section .cards .text-card h3{
@@ -247,9 +259,7 @@ section .socials{
 
 .list{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
+    justify-content: center;
 }
 
 .list div{
@@ -380,4 +390,13 @@ section .socials{
     width: auto;
     max-width: 200px;
     max-height: 200px;
+}
+
+.padding-bottom {
+    padding-bottom: 40px;
+}
+
+.video {
+    border-radius: 15px;
+    width:auto;
 }
