@@ -223,6 +223,7 @@ section .cards .text-card{
 
 section .cards .text-card img {
     width: 100%;
+    border-radius: 15px;
 }
 
 .direction-column{
