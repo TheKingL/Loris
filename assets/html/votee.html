@@ -1,78 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Votee</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/styles.css">
-    <script defer type="text/javascript" src="../js/scroll.js"></script>
-    <script defer type="text/javascript" src="../js/mousemove.js"></script>
-    <link rel="icon" type="image/x-icon" href="../img/icon.png">
-</head>
-<body>
-    <section>
-        <div class="container">
-            <h1>Votee</h1>
-            <div class="cards">
-                <img class="votee object" data-value="3" src="../img/Votee.png">
-            </div>
+{% extends 'base.html' %}
+
+{% block title %}Votee{% endblock %}
+
+{% block main %}
+<section>
+    <div class="container">
+        <h1>Votee</h1>
+        <div class="cards">
+            <img class="votee object" data-value="3" src="../img/Votee.png">
         </div>
-    </section>
-    <section>
-        <div class="container reveal">
-            <h2>Résumé</h2>
-            <div class="window">
-                <div class="titlebar">
-                    <div class="buttons">
-                        <div class="close">
-                            <div class="closebutton"></div>
-                        </div>
-                        <div class="minimize">
-                            <div class="minimizebutton"></div>
-                        </div>
-                        <div class="zoom">
-                            <div class="zoombutton"></div>
-                        </div>
+    </div>
+</section>
+<section>
+    <div class="container reveal">
+        <h2>Résumé</h2>
+        <div class="window">
+            <div class="titlebar">
+                <div class="buttons">
+                    <div class="close">
+                        <div class="closebutton"></div>
                     </div>
-                    <p>Votee.txt</p>
+                    <div class="minimize">
+                        <div class="minimizebutton"></div>
+                    </div>
+                    <div class="zoom">
+                        <div class="zoombutton"></div>
+                    </div>
                 </div>
-                <div class="content">
-                    <h3>Qu'est-ce que Votee ?</h3>
-                    <p>Dans le cadre du parcours A (RACDV - Réalisation d'applications conception, développement, validation), j'ai dû réaliser (en groupe) un projet consistant à créer un site web de vote.</p>
-                    <p>C'est là que Votee est né.</p>
-                    <p>Votee est un outil de décision collective réalisé en 2e année de BUT Informatique.<br>En outre, c'est un site web permettant de poser des questions à une communauté bien précise et que celle-ci y réponde au travers des réponses appelées "Propositions".</p>
-                    <p>Finalement, la proposition ayant reçu le plus de vote sera celle adoptée.</p>
-                </div>
+                <p>Votee.txt</p>
+            </div>
+            <div class="content">
+                <h3>Qu'est-ce que Votee ?</h3>
+                <p>Dans le cadre du parcours A (RACDV - Réalisation d'applications conception, développement, validation), j'ai dû réaliser (en groupe) un projet consistant à créer un site web de vote.</p>
+                <p>C'est là que Votee est né.</p>
+                <p>Votee est un outil de décision collective réalisé en 2e année de BUT Informatique.<br>En outre, c'est un site web permettant de poser des questions à une communauté bien précise et que celle-ci y réponde au travers des réponses appelées "Propositions".</p>
+                <p>Finalement, la proposition ayant reçu le plus de vote sera celle adoptée.</p>
             </div>
         </div>
-    </section>
-    <section>
-        <div class="container reveal">
-            <h2>Un système de vote</h2>
-            <div class="cards">
-                <div class="text-card">
-                    <h3>Créez</h3>
-                    <p>Créez un sondage en quelques clics. Avec du choix !</p>
-                </div>
-                <div class="text-card">
-                    <h3>Partagez</h3>
-                    <p>Partagez le lien du sondage avec les personnes de votre choix.</p>
-                </div>
-                <div class="text-card">
-                    <h3>Visualisez</h3>
-                    <p>Visualisez les résultats en temps réel.</p>
-                </div>
+    </div>
+</section>
+<section>
+    <div class="container reveal">
+        <h2>Un système de vote</h2>
+        <div class="cards">
+            <div class="text-card">
+                <h3>Créez</h3>
+                <p>Créez un sondage en quelques clics. Avec du choix !</p>
+            </div>
+            <div class="text-card">
+                <h3>Partagez</h3>
+                <p>Partagez le lien du sondage avec les personnes de votre choix.</p>
+            </div>
+            <div class="text-card">
+                <h3>Visualisez</h3>
+                <p>Visualisez les résultats en temps réel.</p>
             </div>
         </div>
-    </section>
-    <section>
-        <div class="container reveal">
-            <h2 class="padding-bottom">Votee en vidéo</h2>
-            <div class="cards">
-                <iframe class="video" width="520" height="300" src="https://www.youtube.com/embed/_VFDDNAjTJQ" allowfullscreen></iframe>
-            </div>
+    </div>
+</section>
+<section>
+    <div class="container reveal">
+        <h2 class="padding-bottom">Votee en vidéo</h2>
+        <div class="cards">
+            <iframe class="video" width="520" height="300" src="https://www.youtube.com/embed/_VFDDNAjTJQ" allowfullscreen></iframe>
         </div>
-    </section>
-</body>
-</html>
+    </div>
+</section>
+{% endblock %}

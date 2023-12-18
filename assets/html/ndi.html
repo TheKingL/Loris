@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peach</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <script defer type="text/javascript" src="../js/scroll.js"></script>
-    <script defer type="text/javascript" src="../js/mousemove.js"></script>
-    <link rel="icon" type="image/x-icon" href="../img/icon.png">
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}Peach{% endblock %}
+
+{% block main %}
 <section>
     <div class="container">
         <h1>Peach</h1>
@@ -86,5 +79,4 @@
         </div>
     </div>
 </section>
-</body>
-</html>
+{% endblock %}
